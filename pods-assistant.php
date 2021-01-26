@@ -16,3 +16,7 @@ define( 'PODS_FLASST_VERSION', '0.0.1' );
 define( 'PODS_FLASST_FILE', trailingslashit( __FILE__ ) );
 define( 'PODS_FLASST_DIR', plugin_dir_path( PODS_FLASST_FILE ) );
 define( 'PODS_FLASST_URL', plugins_url( '/', PODS_FLASST_FILE ) );
+
+require_once PODS_FLASST_DIR . 'backend/class-pods-flasst-loader.php';
+
+PodsFLAsstLoader::init();

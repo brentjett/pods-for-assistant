@@ -10,6 +10,10 @@ const config = {
 	entry: './src/index.js',
 	externals: {
 		'react': 'React',
+		'@wordpress/i18n' : 'wp.i18n',
+		'assistant': 'FL.Assistant',
+		'assistant/ui': 'FL.Assistant.ui',
+		'assistant/data': 'FL.Assistant.data',
 	},
 	output: {
 		path: path.resolve( __dirname, 'build' ),
